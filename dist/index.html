@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Javascript Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>MiniMap Creator</h1>
+        <h5> Choose from the icons on the left pane </h5> 
+        <p>Instructions: Specify height and width of map. Click on any tile on the generated map. Select from the items on the left pane to be displayed on the map.</p> 
+      </div>
+      
+        <div class="row">
+          <div class="col-md-2 bg-dark text-white">
+            <h4> Select Item </h4>
+          </div>
+          <div class="col-md-10 bg-dark text-white">
+            <h4> Generated Minimap </h4>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-md-2 bg-info no-padding">
+              <image src="https://i.postimg.cc/cJ561YmH/barrel.png" id="img_barrel"/>
+              <image src="https://i.postimg.cc/3R4NkRSZ/grass.png" id="img_grass"/>
+              <image src="https://i.postimg.cc/4yp310T7/tree.png" id="img_tree"/>
+              <image src="https://i.postimg.cc/C131kg9p/sand.png" id="img_sand"/>
+            </div>
+            <div class="col-md-10 bg-light">
+              <label> Height: </label>
+              <input type="number" min="0" class="form-control" id="input_length" placeholder="Enter length" value="0">
+              <label> Width: </label>
+              <input type="number" min="0" class="form-control" id="input_width" placeholder="Enter width" value="0"><p/>
+              <button type="button" class="btn btn-primary" id="btn_generate">Generate Minimap</button>
+              <button type="button" class="btn btn-primary" id="btn_modify" disabled>Modify Minimap</button>
+              <button type="button" class="btn btn-success" id="btn_exportJSON" disabled>Export JSON File</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 bg-white">
+            </div>
+            <div class="col-md-10" id="id_placeholder">
+            </div><!--End of PlaceHolder Div-->
+          </div>
+      </div>
+  </body>
+  
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

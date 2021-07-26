@@ -1,0 +1,13 @@
+/* no gap between images */
+.no-padding {
+   font-size: 0px;
+}
+
+.highlight_image { 
+  border:solid 1px red; 
+}
+
+.overlap-image {
+  position:absolute;
+  z-index:1;
+}
